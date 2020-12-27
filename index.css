@@ -1,0 +1,73 @@
+body {
+    background-color: #565e66;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form, .greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+h1 {
+    font-size: 7em;
+    text-shadow: #000000 initial;
+}
+
+h2 {
+    font-size: 3em;
+    text-shadow: #000000 initial;
+}
+
+h3 {
+    font-size: 2em;
+    text-shadow: #000000 initial;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    font-size: 2em;
+}
+
+li {
+    font-size: 1.8em;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 0.6em;
+}
+
+ul {
+    list-style: none;
+}
+
+.js-toDoForm input {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+}
