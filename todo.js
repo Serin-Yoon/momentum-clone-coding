@@ -6,6 +6,7 @@ const TODOS_LS = "toDos";
 
 let toDos = [];
 
+//삭제
 function deleteToDo(event) {
     const btn = event.target;
     const li = btn.parentNode;
@@ -17,10 +18,12 @@ function deleteToDo(event) {
     saveToDos();
 }
 
+//저장
 function saveToDos() {
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
 
+//등록
 function paintToDo(text) {
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
